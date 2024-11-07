@@ -1,22 +1,20 @@
-// Seleccionar elementos del DOM
-const colorSelect = document.getElementById("colorSelect");
-const textInput = document.getElementById("textInput");
-const applyChangesButton = document.getElementById("applyChanges");
-const customProduct = document.getElementById("customProduct");
-const customText = document.getElementById("customText");
-
-// Función para aplicar los cambios de personalización
-function applyCustomization() {
-    // Obtener el color seleccionado
-    const selectedColor = colorSelect.value;
-    // Obtener el texto personalizado
-    const text = textInput.value;
-
-    // Cambiar el color de fondo del producto
-    customProduct.style.backgroundColor = selectedColor;
-    // Cambiar el texto mostrado
-    customText.textContent = text || "Texto personalizado";
-}
-
-// Evento para aplicar los cambios en tiempo real
-applyChangesButton.addEventListener("click", applyCustomization);
+function updateProduct() {
+        const color = document.getElementById("color").value;
+        const pattern = document.getElementById("pattern").value;
+        const text = document.getElementById("text").value;
+        
+        const productImage = document.getElementById("productImage");
+        productImage.style.backgroundColor = color;
+        
+        if (pattern === "stripes") {
+          productImage.style.backgroundImage = "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.2) 10px, rgba(0,0,0,0.2) 20px)";
+        } else if (pattern === "dots") {
+          productImage.style.backgroundImage = "radial-gradient(circle, rgba(0,0,0,0.2) 1px, transparent 1px)";
+          productImage.style.backgroundSize = "20px 20px";
+        } else {
+          productImage.style.backgroundImage = "none";
+        }
+        
+        productImage.alt = text;
+      }
+      

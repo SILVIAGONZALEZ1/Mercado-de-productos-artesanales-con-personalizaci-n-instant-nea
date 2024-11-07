@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handcrafted Hub - Personalización de productos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handcrafted Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Handcrafted Hub</h1>
-        <p>¡Crea tu producto artesanal único con nuestra personalización en tiempo real!</p>
-    </header>
-    <main>
-        <section class="product-preview">
-            <div class="custom-product" id="customProduct">
-                <p id="customText">Texto personalizado</p>
-            </div>
-        </section>
-        <section class="customization-options">
-            <h2>Personaliza tu producto</h2>
-            <label for="colorSelect">Color de fondo:</label>
-            <select id="colorSelect">
-                <option value="#f4f4f9">Blanco</option>
-                <option value="#ffde59">Amarillo</option>
-                <option value="#ff6b6b">Rojo</option>
-                <option value="#4ecdc4">Verde</option>
-                <option value="#1a535c">Azul oscuro</option>
-            </select>
+  <header>
+    <h1>🛍️ Handcrafted Hub</h1>
+    <p>Encuentra productos únicos y personalízalos al instante</p>
+  </header>
 
-            <label for="textInput">Texto personalizado:</label>
-            <input type="text" id="textInput" placeholder="Escribe tu texto aquí">
+  <section class="product">
+    <h2>Personaliza tu Producto</h2>
+    <div class="product-display">
+      <img id="productImage" src="img/descarga (1).jfif" alt="Producto">
+    </div>
+    <form id="customizeForm">
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color">
+      
+      <label for="pattern">Patrón:</label>
+      <select id="pattern" name="pattern">
+        <option value="none">Ninguno</option>
+        <option value="stripes">Rayas</option>
+        <option value="dots">Puntos</option>
+      </select>
 
-            <button id="applyChanges">Aplicar cambios</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Handcrafted Hub - Todos los derechos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+      <label for="text">Texto Personalizado:</label>
+      <input type="text" id="text" name="text" placeholder="Escribe aquí...">
+      
+      <button type="button" onclick="updateProduct()">Vista previa</button>
+    </form>
+    <button class="order-btn">🛒 Añadir al carrito</button>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
