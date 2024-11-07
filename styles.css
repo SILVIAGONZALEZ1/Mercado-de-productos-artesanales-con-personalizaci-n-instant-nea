@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Estilos de la página */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
+    
+    /* Encabezado */
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        color: #333;
+    }
+    
+    p {
+        color: #666;
+    }
+    
+    /* Vista previa del producto */
+    .product-preview {
+        margin-bottom: 20px;
+    }
+    
+    .custom-product {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f9;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .custom-product p {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    /* Opciones de personalización */
+    .customization-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .customization-options label {
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .customization-options select,
+    .customization-options input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #4ecdc4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #3bb3a2;
+    }
+    
+    /* Pie de página */
+    footer {
+        margin-top: 20px;
+        color: #666;
+        font-size: 14px;
+    }
+    

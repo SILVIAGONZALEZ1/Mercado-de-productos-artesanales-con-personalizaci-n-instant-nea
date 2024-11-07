@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handcrafted Hub - Personalización de productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Handcrafted Hub</h1>
+        <p>¡Crea tu producto artesanal único con nuestra personalización en tiempo real!</p>
+    </header>
+    <main>
+        <section class="product-preview">
+            <div class="custom-product" id="customProduct">
+                <p id="customText">Texto personalizado</p>
+            </div>
+        </section>
+        <section class="customization-options">
+            <h2>Personaliza tu producto</h2>
+            <label for="colorSelect">Color de fondo:</label>
+            <select id="colorSelect">
+                <option value="#f4f4f9">Blanco</option>
+                <option value="#ffde59">Amarillo</option>
+                <option value="#ff6b6b">Rojo</option>
+                <option value="#4ecdc4">Verde</option>
+                <option value="#1a535c">Azul oscuro</option>
+            </select>
+
+            <label for="textInput">Texto personalizado:</label>
+            <input type="text" id="textInput" placeholder="Escribe tu texto aquí">
+
+            <button id="applyChanges">Aplicar cambios</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Handcrafted Hub - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
