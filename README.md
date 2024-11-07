@@ -1,0 +1,2 @@
+# Mercado-de-productos-artesanales-con-personalizaci-n-instant-nea
+Un sitio para comprar productos hechos a mano, como joyas o ropa, con una opción de personalización instantánea en tiempo real. Los usuarios pueden elegir colores, patrones o textos personalizados, viendo cómo se verá el producto terminado antes de hacer el pedido. Ideal para aquellos que buscan un regalo único o productos personalizados.
